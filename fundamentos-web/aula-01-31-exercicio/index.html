@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos da Web</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <div>
+      <label>Nome: </label>
+      <input id="inNome" placeholder="Digite seu nome" type="text" />
+    </div>
+
+    <div>
+      <label>Sobrenome: </label>
+      <input id="inSobrenome" placeholder="Digite seu sobrenome" type="text" />
+    </div>
+
+    <button onclick="exibirNomeCompleto()" type="button">Enviar</button>
+
+    <p id="outParagrafo"></p>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
