@@ -5,3 +5,9 @@ function exibirNomeCompleto() {
 
   outParagrafo.textContent = `Nome:  ${inNome}  ${inSobrenome}`;
 }
+
+function limparNomeCompleto() {
+  inNome.value = "";
+  inSobrenome.value = "";
+  outParagrafo.textContent = "";
+}
