@@ -16,19 +16,32 @@
   </head>
   <body>
     <form id="formItem">
+      <legend>Alistamento Militar</legend>
       <div>
         <label>Digite a sua idade: </label>
-        <input id="idade" placeholder="Informe sua idade" type="number" />
+        <input
+          id="idade"
+          placeholder="Informe sua idade"
+          type="number"
+        />
       </div>
 
       <div>
         <label>Digite a sua altura: </label>
-        <input id="altura" placeholder="Informe sua altura" type="number" />
+        <input
+          id="altura"
+          placeholder="Informe sua altura"
+          type="number"
+        />
       </div>
 
-      <div>
-        <button onclick="calcular()" type="button" id="CalcularButton">
-          Calcular
+      <div class="buttons__wrapper">
+        <button class="buttons buttonsVerificar" onclick="verificar()" type="button">
+          Verificar
+        </button>
+
+        <button class="buttons buttonsLimpar" onclick="limpar()" type="button">
+          Limpar
         </button>
       </div>
     </form>
