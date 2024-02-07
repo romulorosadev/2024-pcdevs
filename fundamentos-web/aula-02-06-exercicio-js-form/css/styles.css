@@ -14,12 +14,21 @@ body {
 }
 
 #formItem {
-  background-color: #555;
+  background-color: #2f4538;
   display: flex;
   flex-flow: column;
   gap: 25px;
-  padding: 40px 20px;
   max-width: 250px;
+  padding: 40px 20px;
+}
+
+#formItem legend {
+  color: #d2d351;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
 #formItem div {
@@ -39,31 +48,52 @@ body {
   padding: 10px;
 }
 
-#CalcularButton {
-  background-color: #000;
+#formItem div.buttons__wrapper {
+  flex-flow: row;
+  gap: 15px;
+}
+
+.buttons {
   border: none;
   border-radius: 5px;
-  color: #fff;
+  font-size: 14px;
   font-weight: bold;
-  max-width: 100px;
   padding: 10px;
   text-transform: uppercase;
   transition: background-color 2s, color 2s, transform 0.5s;
+  width: 100%;
 }
 
-#CalcularButton:hover {
+.buttons:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: background-color 2s, transform 0.5s;
+}
+
+.buttonsVerificar {
+  background-color: #999;
+  color: #fff;
+}
+
+.buttonsVerificar:hover {
+  background-color: green;
+}
+
+.buttonsLimpar {
   background-color: #fff;
   color: #000;
-  cursor: pointer;
-  font-weight: bold;
-  transform: scale(1.02);
+}
+
+.buttonsLimpar:hover {
+  background-color: #8bc7c7
 }
 
 #resultado {
   background-color: #000;
-  color: #fff;
-  font-weight: normal;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
   height: 100px;
-  padding: 20px;
   max-width: 250px;
+  padding: 20px;
 }
